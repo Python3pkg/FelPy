@@ -1,8 +1,8 @@
 from distutils.core import setup
 setup(
   name = 'FelPy',
-  py_modules = ['ArrayFormat'],
-  version = '1.0',
+  py_modules = ['ArrayFormat',"confReturn"],
+  version = '1.2',
   description = 'An assortment of tools from Felix - currently just an array manipulation module',
   author = 'Felix Johnson',
   author_email = 'him@felixhasa.website',

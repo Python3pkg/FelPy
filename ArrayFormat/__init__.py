@@ -41,3 +41,6 @@ class Formatter():
                 row.append(self.builder[i+j*x])
             final.append(row)
         return final
+
+    def clear(self):
+        self.builder = []
