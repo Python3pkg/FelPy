@@ -17,7 +17,6 @@ class Formatter():
     def randomize(self):
         used = []
         top = len(self.builder)
-        print(top)
         for i in range(0,top):
             while True:
                 rand = random.randrange(0,top)
@@ -28,6 +27,9 @@ class Formatter():
         for num in used:
             builder2.append(self.builder[used[num]])
         self.builder=builder2
+
+    def simpleOutput(self):
+        return self.builder
 
     def formatOutput(self, x, y):
         if x*y > len(self.builder):
