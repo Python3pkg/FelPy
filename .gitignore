@@ -1,1 +1,3 @@
 .pypirc
+testing.py
+__pycache__/
