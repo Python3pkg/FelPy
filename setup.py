@@ -7,7 +7,7 @@ setup(
   author = 'Felix Johnson',
   author_email = 'him@felixhasa.website',
   url = 'https://github.com/12johnsonf/FelPy', # use the URL to the github repo
-  download_url = 'https://github.com/12johnsonf/FelPy/tarball/1.0', # I'll explain this in a second
+  download_url = 'https://github.com/12johnsonf/FelPy/tarball/1.2', # I'll explain this in a second
   keywords = ['tools', 'custom', 'first'], # arbitrary keywords
   classifiers = [],
 )
