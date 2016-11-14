@@ -35,7 +35,7 @@ If you wish to give it an array to start, just put one inbetween the brackets. T
 variableName.add("Array item")
 ```
 To randomize, or scramble, the order of the items in the array, run:
-```bash
+```python
 variableName.randomize()
 ```
 To simply take out the raw array, run:
