@@ -49,6 +49,15 @@ variableName.formatOutput(x,y)
 ```
 Where x and y are the width and height of the desired array.
 
+###confReturn
+This is another import, `confReturn`
+
+Very simply, run it like so:
+
+```python
+variableName = confReturn.rnr.do("gender")
+```
+Where `"gender"` can be any string being set. Play arround with it in IDLE, you'll get the gist of it. 
 
 ##Contributions
 
