@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
   name = 'FelPy',
-  ppy_modules = ['ArrayFormat'],
+  py_modules = ['ArrayFormat'],
   version = '0.1',
   description = 'An assortment of tools from Felix',
   author = 'Felix Johnson',
