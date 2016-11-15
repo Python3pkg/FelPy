@@ -21,12 +21,12 @@ This will install everything automagically.
 
 ###listFormat
 
-This uses the import `ListFormat`.
+This uses the import `listFormat`.
 It uses a class, and must be instantiated as follows:
 
 ```python
 
-variableName = ListFormat.Formatter()
+variableName = listFormat.Formatter()
 
 ```
 
@@ -48,6 +48,12 @@ Or, to format to a 2D list, use:
 variableName.formatOutput(x,y)
 ```
 Where x and y are the width and height of the desired list.
+
+All of the above methods work standalone.
+
+```python
+print(listFormat.random()
+
 
 ###confReturn
 This is another import, `confReturn`

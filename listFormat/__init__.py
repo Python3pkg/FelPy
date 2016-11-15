@@ -15,32 +15,38 @@ class Formatter():
             self.builder.append(toAdd)
 
     def randomize(self):
-        used = []
-        top = len(self.builder)
-        for i in range(0,top):
-            while True:
-                rand = random.randrange(0,top)
-                if (rand not in used):
-                    used.append(rand)
-                    break
-        builder2 = []
-        for num in used:
-            builder2.append(self.builder[used[num]])
-        self.builder=builder2
+        self.builder=random(self.builder)
 
     def simpleOutput(self):
         return self.builder
 
     def formatOutput(self, x, y):
-        if x*y > len(self.builder):
-            raise IndexError('The list cannot be put in a grid that small')
-        final = []
-        for i in range(0,x):
-            row = []
-            for j in range(0,y):
-                row.append(self.builder[i+j*x])
-            final.append(row)
-        return final
+        return formatOutput(self.builder, x, y)
 
     def clear(self):
         self.builder = []
+
+def random(lst):
+    used = []
+    top = len(lst)
+    for i in range(0,top):
+        while True:
+            rand = random.randrange(0,top)
+            if (rand not in used):
+                used.append(rand)
+                break
+    builder2 = []
+    for num in used:
+        builder2.append(lst[used[num]])
+    return builder2
+
+def formatOutput(lst, x, y):
+    if x*y > len(lst):
+        raise IndexError('The list cannot be put in a grid that small')
+    final = []
+    for i in range(0,x):
+        row = []
+        for j in range(0,y):
+            row.append(lst[i+j*x])
+        final.append(row)
+    return final
