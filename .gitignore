@@ -3,3 +3,4 @@ testing.py
 __pycache__/
 MANIFEST
 dist/
+*.pyc

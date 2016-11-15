@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
   name = 'FelPy',
-  py_modules = ['ArrayFormat',"confReturn"],
+  py_modules = ['listFormat',"confReturn"],
   version = '1.2',
   description = 'An assortment of tools from Felix - currently just an array manipulation module',
   author = 'Felix Johnson',

@@ -33,7 +33,7 @@ class Formatter():
 
     def formatOutput(self, x, y):
         if x*y > len(self.builder):
-            raise IndexError('The array cannot be put in a grid that small')
+            raise IndexError('The list cannot be put in a grid that small')
         final = []
         for i in range(0,x):
             row = []

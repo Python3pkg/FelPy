@@ -19,35 +19,35 @@ This will install everything automagically.
 
 ##Usage
 
-###ArrayFormat
+###listFormat
 
-This uses the import `ArrayFormat`.
+This uses the import `ListFormat`.
 It uses a class, and must be instantiated as follows:
 
 ```python
 
-variableName = ArrayFormatt.Formatter()
+variableName = ListFormat.Formatter()
 
 ```
 
-If you wish to give it an array to start, just put one inbetween the brackets. The array can be added to like so:
+If you wish to give it an list to start, just put one inbetween the brackets. The list can be added to like so:
 ```python
-variableName.add("Array item")
+variableName.add("List item")
 ```
-To randomize, or scramble, the order of the items in the array, run:
+To randomize, or scramble, the order of the items in the list, run:
 ```python
 variableName.randomize()
 ```
-To simply take out the raw array, run:
+To simply take out the raw list, run:
 ```python
 variableName.simpleOutput()
 ```
 
-Or, to format to a 2D array, use:
+Or, to format to a 2D list, use:
 ```python
 variableName.formatOutput(x,y)
 ```
-Where x and y are the width and height of the desired array.
+Where x and y are the width and height of the desired list.
 
 ###confReturn
 This is another import, `confReturn`
@@ -55,9 +55,9 @@ This is another import, `confReturn`
 Very simply, run it like so:
 
 ```python
-variableName = confReturn.rnr.do("gender")
+variableName = confReturn.do("gender")
 ```
-Where `"gender"` can be any string being set. Play arround with it in IDLE, you'll get the gist of it. 
+Where `"gender"` can be any string being set. Play arround with it in IDLE, you'll get the gist of it.
 
 ##Contributions
 
