@@ -52,7 +52,11 @@ Where x and y are the width and height of the desired list.
 All of the above methods work standalone.
 
 ```python
-print(listFormat.random()
+print(listFormat.random(["a","b"]))
+
+print(listFormat.formatOutput(["a","b","c","d"],2,2))
+
+```
 
 
 ###confReturn
