@@ -69,6 +69,34 @@ variableName = confReturn.do("gender")
 ```
 Where `"gender"` can be any string being set. Play arround with it in IDLE, you'll get the gist of it.
 
+##leaderboard
+For this one, import `leaderboard`
+
+It will generate a 10 line leaderboard. You can write to it with a name, up to 10
+characters, and a points value, between 0 and 99. When placing entries, they are sorted first
+by value, so higher scores occur higher up. If you are adding an entry when there is already
+an entry with the same points value, the new entry will appear above.
+
+All of the functions below will accept one (more) parameter, the filename. Without it, it
+will default to `filename.txt`. Leaderboard data is stored as UTF-8 text, but can be given
+any file extension. NB: Remember to include a file extension (I personally like `.lbd`) if
+you are using a custom filename.
+
+To generate (or clear) a leaderboard:
+```python
+leaderboard.make()
+```
+
+To write to the leaderboard:
+```python
+leaderboard.write(points, name)
+```
+
+To read the leaderboard (outputs as a 10-line String):
+```python
+leaderboard.read()
+```
+
 ##Contributions
 
 Financial aid is always welcome at [Paypal](https://www.paypal.me/felixj20000), or of couse feel free to fork the project. If you

@@ -1,6 +1,6 @@
 def write(number, name, *filename):
     if filename:
-        filename = ', '.join(str(x) for x in filename)+".txt"
+        filename = ', '.join(str(x) for x in filename)
     else:
         filename = "leaderboard.txt"
     try:
@@ -23,15 +23,15 @@ def write(number, name, *filename):
 
 def read(*filename):
     if filename:
-        filename = ', '.join(str(x) for x in filename)+".txt"
+        filename = ', '.join(str(x) for x in filename)
     else:
         filename = "leaderboard.txt"
     f = open(filename, 'r')
-    return ("\nLeaderboard:\n" + f.read())
+    return (f.read())
 
 def make(*filename):
     if filename:
-        filename = ', '.join(str(x) for x in filename)+".txt"
+        filename = ', '.join(str(x) for x in filename)
     else:
         filename = "leaderboard.txt"
     f = open(filename, 'w+')
