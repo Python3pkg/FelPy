@@ -1,7 +1,7 @@
 def do(question):
     while True:
-        answer = input(question.capitalize() + ': ')
-        confirm = input('Is your ' + question + ' ' + answer + '? (y/n) ')
+        answer = eval(input(question.capitalize() + ': '))
+        confirm = eval(input('Is your ' + question + ' ' + answer + '? (y/n) '))
         if confirm == 'y':
             return answer
             break
